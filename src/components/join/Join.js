@@ -17,16 +17,15 @@ const Join = () => {
     transports: ["websocket", "polling", "flashsocket"],
   });
 
-  const userCheck = () => {
-    socket.emit("userCheck", { name, room });
-    socket.on("userCheckResponse", ({ error }) => {
-      if (error) {
-        setUserError(error);
-      }
-    });
-  };
-
   useEffect(() => {
+    const userCheck = () => {
+      socket.emit("userCheck", { name, room });
+      socket.on("userCheckResponse", ({ error }) => {
+        if (error) {
+          setUserError(error);
+        }
+      });
+    };
     userCheck();
   }, [name, room]);
 
