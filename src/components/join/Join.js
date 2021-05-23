@@ -11,8 +11,6 @@ const Join = () => {
   const [room, setRoom] = useState("");
   const [userError, setUserError] = useState("");
 
-  console.log(userError);
-
   socket = io(ENDPOINT, {
     transports: ["websocket", "polling", "flashsocket"],
   });
