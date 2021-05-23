@@ -1,0 +1,36 @@
+.usersBoxContainer {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  height: 60%;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.userHeader {
+  background-color: #2979ff;
+  color: white;
+  height: 60px;
+  border-radius: 4px 4px 0 0;
+}
+
+.users {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: black;
+}
+
+.userList {
+  overflow: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .usersBoxContainer {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
