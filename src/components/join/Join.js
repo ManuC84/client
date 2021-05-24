@@ -48,6 +48,7 @@ const Join = () => {
         <div>
           <input
             placeholder="Name"
+            value={name}
             type="text"
             className="joinInput"
             onChange={(event) => setName(event.target.value)}
@@ -56,6 +57,7 @@ const Join = () => {
         <div>
           <input
             placeholder="Join using room name"
+            value={room}
             type="text"
             className="joinInput mt-20"
             onChange={(event) => setRoom(event.target.value)}
