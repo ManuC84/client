@@ -37,6 +37,7 @@ const Join = () => {
       event.preventDefault();
       window.alert(userError);
       setUserError("");
+      setName("");
     }
   };
 
